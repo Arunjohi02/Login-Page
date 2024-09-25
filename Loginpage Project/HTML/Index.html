@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACCOUND</title>
+    <link rel="stylesheet" href="../CSS/Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=DM+Serif+Text:ital@0;1&family=Dancing+Script:wght@400..700&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Lobster&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Playwrite+CL:wght@100..400&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="whole">
+        <main class="container">
+            <h1 style="color: white; text-align: center; text-shadow: 1px 2px 2px white;">Password Confirmation</h1>
+
+            <form>
+                <!-- Name Entering Aria -->
+                <section>
+                    <label>Name :</label>
+                    <input type="text" id="username" placeholder="Enter Your Name" required> <!--Username Enter Aria-->
+                </section>
+
+                <!-- password Entering Aria -->
+                <section>
+                    <label>Password :</label>
+                    <input type="password" id="password" placeholder="Enter Your Password" required>
+                </section>
+
+                <!-- Conform-PassWord Aria -->
+
+                <section>
+                    <label>Conform-PassWord :</label>
+                    <input type="password" id="C-password" placeholder="Entered Your password" require>
+                </section>
+
+                <!-- result Showing Aria -->
+
+                <section>
+                    <p id="result-display" style="margin-left: 60px;"></p>
+                </section>
+
+                <!-- submit Button (btn) Aria -->
+
+                <button type="submit" id="btn" onclick="demo()">submit</button>
+            </form>
+        </main>
+    </div>
+    <script src="../JS/script.js"></script>
+    <!-- <script>
+        const name = document.getElementById("username"); //declare the value of user Name
+        const pass = document.getElementById("password"); //declare the value of password
+        const c_pass = document.getElementById("C-password"); //declare the value of confirm-password
+        const result = document.getElementById("result-display"); //declare the result element
+        const demo = () => {
+            if (pass.value === c_pass.value) {
+                result.innerHTML = "your's details is Correct";
+                result.style.color = "Green";
+                result.style.textShadow = "text-shadow: 1px 1px 8px green;";
+            } else {
+                result.innerHTML = "your's details Both is Wrong";
+                result.style.color = "Red";
+                result.style.textShadow = "text-shadow: 1px 1px 8px red;";
+            }
+        }
+    </script> -->
+
+    <!-- <script src="../JS/Error.js"></script> -->
+</body>
+
+</html>
